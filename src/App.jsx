@@ -3,7 +3,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import { v4 as uuidv4 } from 'uuid';
 import Swal from "sweetalert2";
-import { div } from 'three/examples/jsm/nodes/Nodes.js';
+import { div,NodeMaterial } from 'three/examples/jsm/nodes/Nodes.js';
 
 
 function App() {

@@ -9,7 +9,13 @@ export default defineConfig({
     tailwindcss(),
     react(),
   ],
+  optimizeDeps: {
+    include: ['three/examples/jsm/nodes/Nodes.js'],
+  },
   build: {
-    chunkSizeWarningLimit: 1000, // in KB
+    chunkSizeWarningLimit: 1000, 
+    rollupOptions: {
+      external: [],
+    }
   },
 })
